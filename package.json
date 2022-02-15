@@ -1,13 +1,14 @@
 {
   "name": "latest-browser-api",
+  "author": "a-wing <1 at 233 dot email>",
   "version": "0.1.0",
   "description": "latest browser api",
   "main": "index.js",
 	"type": "module",
   "scripts": {
+    "update": "browserslist --update-db",
     "build": "node main.js"
   },
-  "author": "a-wing <1 at 233 dot email>",
   "license": "ISC",
   "keywords": [
     "latest",
@@ -15,7 +16,6 @@
     "api"
   ],
   "devDependencies": {
-    "browserslist": "^4.19.1",
-    "caniuse-lite": "^1.0.30001312"
+    "browserslist": "^4.19.1"
   }
 }
