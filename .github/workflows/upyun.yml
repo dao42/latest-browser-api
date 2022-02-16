@@ -33,11 +33,11 @@ jobs:
         git config --local user.email github-actions@github.com
         git commit -am "Auto Update browser latest DB"
 
-#    - name: Push changes
-#      uses: ad-m/github-push-action@master
-#      with:
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
-#        branch: main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.BOT_TOKEN }}
+        branch: main
 
     - name: Build
       run: npm run build
