@@ -10,7 +10,7 @@ const list = {
 }
 
 const latest = browserslist("last 1 version").filter(i => list[i.split(' ')[0]]).reduce((r, i) => {
-	r[i.split(' ')[0]] = i.split(' ')[1]
+	r[i.split(' ')[0]] = i.split(' ')[1] + 1 // 考虑到 caniuse-lite 通常会滞后数天，手动 + 1
 	return r
 }, {})
 
